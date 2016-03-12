@@ -1,0 +1,10 @@
+<div class="poem_view">
+  <%@poems.each do |poem|%>
+      <div class="element">
+        <p>
+          <%= simple_format poem.text%>
+        </p>
+<!--        <h6>Нажмите чтобы скопировать</h6>-->
+      </div>
+  <%end %>
+</div>
