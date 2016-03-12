@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $(".copy").zclip({
         path:'ZeroClipboard',
@@ -7,8 +8,6 @@ $(document).ready(function(){
     });
 });
 
-jQuery(document).ready(function($){
-    $('.icon-menu').click(function(event){
-        $('.right_menu').toggleClass('active');
-    });
-});
+$(document).on('page:load', function() {
+    $(".icon-menu").click(function(t){ $(".right_menu").toggleClass("active")
+    })});
